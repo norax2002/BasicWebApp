@@ -16,6 +16,25 @@ public class QueryProcessor {
         } else {
 
 
+            int x = query.lastIndexOf(":");
+            String y = query.substring(x);
+            String [] z = y.split(", ");
+
+            String biggerFish = "";
+
+            for(int i = 0; i < z.length; i++){
+
+                if(Integer.valueOf(z [i]) < Integer.valueOf(biggerFish)) {
+
+
+                    biggerFish = z [i];
+
+
+                }
+
+
+
+            }
 
 
 
@@ -25,7 +44,8 @@ public class QueryProcessor {
 
 
 
-            return "455";
+
+            return biggerFish;
         }
     }
 }
