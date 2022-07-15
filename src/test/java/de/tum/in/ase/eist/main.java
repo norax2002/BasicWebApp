@@ -1,36 +1,23 @@
 package de.tum.in.ase.eist;
 
+import java.util.Random;
+
 public class main {
 
     public static void main(String[] args) {
 
-        String s = "36583240: which of the following numbers is the largest: 78, 510, 74, 451";
+            Random random = new Random();
 
-
-        int x = s.lastIndexOf(":");
-        String y = s.substring(x);
-        String [] z = y.split(", ");
-
-        String biggerFish = "";
-
-        for(int i = 0; i < z.length; i++){
-
-            if(Integer.valueOf(z [i]) < Integer.valueOf(biggerFish)) {
-
-
-                biggerFish = z [i];
-
-
-            }
-
+            int v = random.nextInt(1000);
+            System.out.println(v);
 
 
         }
 
-        System.out.println(biggerFish);
 
 
-    }
+
+
 
 
 }
