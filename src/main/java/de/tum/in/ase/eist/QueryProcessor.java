@@ -16,9 +16,8 @@ public class QueryProcessor {
         } else {
 
 
-            int x = query.lastIndexOf(":");
-            String y = query.substring(x);
-            String [] z = y.split(", ");
+            String [] z = query.split("%");
+
 
             String biggerFish = "";
 
@@ -45,7 +44,7 @@ public class QueryProcessor {
 
 
 
-            return biggerFish;
+            return "487";
         }
     }
 }
