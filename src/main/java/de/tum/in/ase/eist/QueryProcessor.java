@@ -2,6 +2,8 @@ package de.tum.in.ase.eist;
 
 import org.springframework.stereotype.Service;
 
+import java.util.Random;
+
 @Service
 public class QueryProcessor {
 
@@ -35,6 +37,11 @@ public class QueryProcessor {
 
             }
 
+            Random random = new Random();
+
+            int v = random.nextInt(1000);
+
+            String s = String.valueOf(v);
 
 
 
@@ -44,7 +51,8 @@ public class QueryProcessor {
 
 
 
-            return "487";
+
+            return "s";
         }
     }
 }
