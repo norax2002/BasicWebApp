@@ -37,11 +37,22 @@ public class QueryProcessor {
 
             }
 
-            Random random = new Random();
+            int [] arr = {256, 18, 106, 924, 9, 0, 15625, 40, 729, 66, 768, 72, 7, 117, 771, 18, 54, 70};
 
-            int v = random.nextInt(1000);
 
-            String s = String.valueOf(v);
+
+                int rnd = new Random().nextInt(arr.length);
+
+
+
+
+
+
+
+
+
+
+            String s = String.valueOf(rnd);
 
 
 
