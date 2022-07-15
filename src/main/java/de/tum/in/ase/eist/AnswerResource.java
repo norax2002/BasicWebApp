@@ -26,6 +26,7 @@ public class AnswerResource {
 		logger.info("Received query \"{}\"", query);
 		String answer = queryProcessor.process(query);
 		return ResponseEntity.ok(answer);
+
 	}
 
 }
